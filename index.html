@@ -15,7 +15,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/timeline.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
+
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -41,338 +44,1350 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>关于JS的一些tips</h1>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Created by @dongjinhu</small>
 					</p>
 				</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
+				<section data-transition="slide" data-background="#48b379" data-background-transition="zoom" style="color:#fff;">
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
+						<ul id='timeline'>
+							<li class='work'>
+								<input class='radio' id='work5' name='works' type='radio' checked>
+								<div class="relative">
+									<span class='date'>
+										2008/10 <br/>
+										<br/>
+										~ <br/>
+										<br/>
+										2009/03
+									</span>
+									<span class='circle'></span>
+								</div>
+								<div class='content'>
+									<p>
+										<ul>
+										 <li>打杂，见习</li>
+
+										 <li>ExtJS 1.x,  jQuery 1.0?,  Ruby on Rails, Flex 2</li>
+
+										 <li>ERP库存管理、电子说明书平台</li>
+									</ul>
+									</p>
+								</div>
+							</li>
+						</ul>
+		    	</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+							<ul id='timeline'>
+								<li class='work'>
+									<input class='radio' id='work5' name='works' type='radio' checked>
+									<div class="relative">
+										<span class='date'>
+											2009/03 <br/>
+											<br/>
+											~ <br/>
+											<br/>
+											2010/10
+										</span>
+										<span class='circle'></span>
+									</div>
+									<div class='content'>
+										<p>
+											<ul>
+											 <li>开启狂暴开发之路</li>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
+											 <li>Ruby on Rails, Flex 3, Flash, FMS, Python, HTML, JavaScript, CSS ...</li>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+											 <li>钻石交易平台、SNS(日本)、e-learning、天翼游戏(水游城) ...</li>
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+											 <li>系统分析设计、实现、 部署(Skype 英文沟通) ...</li>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+										</ul>
+										</p>
+									</div>
+								</li>
+							</ul>
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+							<ul id='timeline'>
+								<li class='work'>
+									<input class='radio' id='work5' name='works' type='radio' checked>
+									<div class="relative">
+										<span class='date'>
+											2010/10 <br/>
+											<br/>
+											~ <br/>
+											<br/>
+											2013/06
+										</span>
+										<span class='circle'></span>
+									</div>
+									<div class='content'>
+										<p>
+											<ul>
+											 <li>术业有专攻</li>
+
+											 <li>JRuby on Rails, HTML, JavaScript, CSS ...</li>
+
+											 <li>各种文档规范 ...</li>
+
+											 <li>英文、日文沟通 ...</li>
+
+											 <li>驻日本富士通(Fujitsu)开发云存储平台(ETERNUS ESF)、虚拟服务器平台(VSM)、Vmware</li>
+
+										</ul>
+										</p>
+									</div>
+								</li>
+							</ul>
 					</section>
+					<section>
+							<ul id='timeline'>
+								<li class='work'>
+									<input class='radio' id='work5' name='works' type='radio' checked>
+									<div class="relative">
+										<span class='date'>
+											2013/06 <br/>
+											<br/>
+											~ <br/>
+											<br/>
+											2015/08
+										</span>
+										<span class='circle'></span>
+									</div>
+									<div class='content'>
+										<p>
+											<ul>
+											 <li>国内项目</li>
+
+											 <li>Ruby on Rails, HTML, JavaScript, CSS, MongoDB, Solr, Shell, Kafka ...(Web相关)</li>
+
+											 <li>素食项目 ...</li>
+
+											 <li>南京智慧城市、青奥、在南京、综合布线、云景、停车场、大数据 ...</li>
+
+										</ul>
+										</p>
+									</div>
+								</li>
+							</ul>
+					</section>
+
 				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
+			<section data-background="#dddddd">
+					<h2>我的技术栈</h2>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
+					<div id="tags">
+						<ul>
+							<li>Ruby on Rails</li>
+							<li>HTML(5)</li>
+							<li>CSS(3)</li>
+							<li>JavaScript</li>
+							<li>ES6</li>
+							<li>Linux/Mac OS X</li>
+							<li>Shell</li>
+							<li>Architecture</li>
+							<li>Swift</li>
+							<li>iOS</li>
+							<li>MongoDB</li>
+							<li>Zookeeper</li>
+							<li>Nginx</li>
+							<li>PostgresSQL</li>
+							<li>MySQL</li>
+							<li>Flex/ActionScript</li>
+							<li>Handlerbar, Mustache</li>
+							<li>Backbone</li>
+							<li>RequireJS</li>
+							<li>Web Performance</li>
+							<li>jQuery</li>
+							<li>Underscore</li>
+							<li>Python(Django)</li>
+							<li>CoffeeScript</li>
+							<li>SCSS</li>
+							<li>Bootstrap</li>
+							<li>Jasmine</li>
+							<li>Qunit</li>
+							<li>Grunt</li>
+							<li>Yeoman</li>
+							<li>Node(Express)</li>
+							<li>Sinatra</li>
+							<li>Go</li>
+							<li>Git</li>
+							<li>React</li>
+							<li>Solr</li>
+						</ul>
+					</div>
 				</section>
 
 				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
+					<section>
+						<p>2007年</p>
+						<p>15分钟开发一个Blog ???</p>
+					</section>
+					<section>
+						<p>.Net?</p>
+					  <p>SSH?</p>
+						<p>PHP?</p>
+					</section>
+					<section>
+						<h3>DHH告诉你</h3>
+						<p>Nothing Impossible!</p>
+					</section>
+					<section>
+						<h2>Ruby on Rails框架</h2>
 						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+							<img src="images/1.jpg" width="840" height="600"/>
 						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
+				<section>
+					<ul>
+					 <li>一直被其他框架模仿</li>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
+					 <li>Play, Grails, Yii, ...</li>
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+					 <li>Twitter, EMC, Fujitsu, Github, <a href="https://ruby-china.org/sites">更多</a></li>
+				</ul>
+				</section>
 				</section>
 
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+					<section>
+						<h3>今天分享什么?</h3>
+					</section>
+					<section>
+						<h3>No Ruby, Python, PostgreSQL...</h3>
+					</section>
 
-    var nodes = document.querySelectorAll( selector );
+					<section>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+						<img width="178" height="238" src="images/arrow.png" alt="Down arrow">
+						<p>我的开发方式</p>
+						<p>Web相关(JavaScript)</p>
+					</section>
+				</section>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
+				<section>
+					<section>
+						<h3>开发流程</h3>
+					</section>
+					<section>
+						<h3>创业型公司</h3>
+						<p class="fragment">1. 分析需求</p>
+						<p class="fragment">2. 开发功能</p>
+						<p class="fragment">3. 测试</p>
+						<p class="fragment">4. 上线</p>
+						<p class="fragment">5. 补文档...</p>
+					</section>
+
+					<section>
+						<h3>Fujitsu</h3>
+						<p class="fragment">1. 拿到日方需求，分配任务</p>
+						<p class="fragment">2. 大家分析需求，估算时间</p>
+						<p class="fragment">3. 反馈给日方</p>
+						<p class="fragment">4. 日方同意准备开发，不同意重复2，3</p>
+						<p class="fragment">5. 开发过程中对需求提QA</p>
+						<p class="fragment">5. 如果是文档问题, OMG! 漫长的等待...</p>
+						<p class="fragment">6. 开发完成后MT、CT、PT</p>
+						<p class="fragment">7. Track系统跟踪问题，修改Bug,重复6,7</p>
+					</section>
+
+					<section>
+						<h3>你能做什么?</h3>
+						<p class="fragment">NO...</p>
+						<p class="fragment">你就是一个累码的</p>
+						<p class="fragment">有General Guideline</p>
+						<p class="fragment">有文档</p>
+						<p class="fragment">有技术限制范围</p>
+						<p class="fragment">有规定的开发流程</p>
+						<p class="fragment">你的想法要得到日方的肯定后才能使用</p>
+					</section>
+
+					<section>
+						<h3>问题就是...</h3>
+						<p class="fragment">技术更新缓慢</p>
+						<p class="fragment">无法运用好的实践</p>
+						<p class="fragment">开发产生思维定势</p>
+					</section>
+
+					<section>
+						<h3>我是如何加餐的?</h3>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>传统方式</h3>
+						<p>买书...</p>
+						<ul>
+							<li>JavaScript高级程序设计</li>
+							<li>JavaScript权威指南</li>
+							<li>高性能网站建设指南</li>
+							<li>JavaScript语言精粹</li>
+							<li>...</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>线上</h3>
+						<p>看视频， 看博客</p>
+						<ul>
+							<li>Pluralsight</li>
+							<li>Teamtreehouse</li>
+							<li>Youtube</li>
+							<li>Tutsplus</li>
+							<li>JavaScript Weekly</li>
+							<li>...</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>实践</h3>
+						<p>运用所学知识做一些Demo</p>
+						<p>总结一些我的实践方式...</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>番外篇</h3>
+						<p>Comming soon...</p>
+					</section>
+
+					<section>
+						<h3>CDN使用</h3>
+						<p>使用CDN加速静态资源下载</p>
+						<p>如果有时CDN上资源下载不下来，需要下载自己服务器上的资源</p>
+						<!--
+						<pre><code data-trim><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>if (typeof jQuery === 'undefined') {
+  document.write('/path/to/your/scripts/jquery-2.1.4.min.js');
+</script>
+						</code></pre>-->
+					</section>
+
+					<section>
+						<h3>测试JS执行效率</h3>
+						<p><a href="http://jsperf.com">jsperf</a></p>
+						<p>自定义:</p>
+						<pre><code data-trim>
+								function PerfTest(implement, params, times) {
+  this.implement = implement;
+  this.params = params;
+  this.times = times || 10000;
+  this.average = 0;
+}
+
+PerfTest.prototype = {
+  run: function(){
+    var beginAt, endAt, sumTime = 0;
+    for(var i = 0, times = this.times; i < times; i++) {
+      beginAt = +new Date();
+      this.implement(this.params); //调用测试函数
+      endAt = +new Date();
+      sumTime += endAt - beginAt;
+    }
+    this.average = sumTime / this.times;
+    return console.log("Average executated " + this.times + " times and time is : " + this.average );
+  }
+}
+
+var list = [1,2,3,4,5,6,7,8,9,10];
+var testFunc = function(list){
+  var arr = [];
+  for(var i = 0; i < list.length; i++) {
+    arr.push(list[i]);
+  }
+}
+
+var test = new PerfTest(testFunc, list);
+//var test = new PerfTest(testFunc, list, 100000); //指定执行次数
+test.run();
+							</code>
+						</pre>
+					</section>
+
+					<section>
+						<h3>JS加载位置</h3>
+						<ul>
+						<li>需要在DOM渲染之前就需要执行的操作（一般是初始化），在header中加载</li>
+						<li>剩下的放在body底部加载</li>
+					</ul>
+					</section>
+
+					<section>
+						<h3>压缩代码</h3>
+						<ul>
+							<li>YUI Compressor</li>
+							<li>UglifyJS</li>
+							<li>CSS Compressor</li>
+							<li>CSS Minifier</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>将配置数据，翻译，常量从代码中分离</h3>
+						<p>可以集中修改配置文件，而不需要每个文件都修改</p>
+						<pre><code data-trim>
+var SN = SN || {};
+SN.Config = {
+  //Common message
+  messages: {
+    greeting: 'Hello World!'
+  },
+
+  //Error message
+  errors: {
+    mobile: {
+      blank: '电话号码不能为空',
+      invalid: '电话格式不正确'
     }
   }
 }
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+
+$('#mobile').tooltip(SN.Config.errors.mobile.blank);
+
+						</code></pre>
+
+						<p>使用Maintainable JavaScript书中提到的动态创建命名空间</p>
+					</section>
+
+					<section>
+						<h3>测试你的代码</h3>
+						<ul>
+							<li> Jasmine (BDD)</li>
+							<li> Qunit </li>
+							<li> Mocha </li>
+							<li> Sinon </li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>组织代码</h3>
+						<p>JavaScript</p>
+						<ul>
+							<li> core: 核心封装和接口, SnAjax, Common...</li>
+							<li> config: 配置文件，语言，消息，常量等等 </li>
+							<li> models: 数据存储 localStorage, ...</li>
+							<li> controllers: 处理用户交互</li>
+							<li> views: 数据展示</li>
+						</ul>
+						<p>CSS</p>
+						<ul>
+							<li> core: reset.css, ...</li>
+							<li> modules: 针对每个模块特定CSS </li>
+							<li> app.css </li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>模块模式</h3>
+						<p>不要创建全局变量，使用模块模式</p>
+						<div class="fragment">
+							<pre><code data-trim>
+/**
+* The Mobile Common Object
+* @class Common
+* @static
+*/
+var SN = SN || {};
+SN.Common = (function(){
+    'use strict';
+
+    var _getUrlParams = function(ulr){
+			//...
+		}
+
+		//...
+
+		return {
+			/**
+			* Get the URL params
+			* @params {string} url request url
+			* @returns {Array} url params array
+			* @method _getUrlParams
+			*/
+			getUrlParams: function(url){_getUrlParams(url);}
+		}
+
+})();
+
+//调用
+SN.Common.getUrlParams('xxxx');
+							</code></pre>
+						</div>
+						<p class="fragment">
+							注意在立即执行函数内部定义变量不能丢了var
+						</p>
+						<p class="fragment">
+							好处是隐藏内部实现，只暴露公共接口
+						</p>
+					</section>
+
+				</section>
+
+
+
+
+				<section>
+					<section>
+						<h3>番内篇</h3>
+						<p>我的JavaScript编码实践...</p>
+					</section>
+					<section>
+						<p>每条执行语句不要忘记添加分好(Semicolon)</p>
+						<div class="fragment">
+							<pre><code data-trim>function test() {
+    return //javascript 编译器认为语句结束，直接返回
+        {
+           name: 'foobar'
+        };
+}
+							</code></pre>
+						</div>
+						<div class="fragment">
+							=>
+						</div>
+						<div class="fragment">
+							<pre><code data-trim>function test() {
+    return {
+        name: 'foobar'
+    };
+}
+							</code></pre>
+						</div>
+					</section>
+					<section>
+						<p>
+							如果你不确定变量值域的话，比较时，使用===
+						</p>
+						<div class="fragment">
+							<pre><code data-trim>
+'1' == 1 // true
+'' == 0 // true
+false == '0' // true
+' \t\r\n ' == 0 // true
+							</code></pre>
+						</div>
+						<div class="fragment">
+							=>
+						</div>
+						<div class="fragment">
+							<pre><code data-trim>
+'1' === 1 // false
+'' === 0 // false
+false === '0' // false
+' \t\r\n ' === 0 // false
+							</code></pre>
+						</div>
+					</section>
+
+					<section>
+						<p>慎用内建包装类型创建对象</p>
+						<div class="fragment">
+							<pre><code data-trim>
+var num = new Number(8);
+var str = new String('foobar');
+console.log(typeof num); //object
+console.log(typeof str); //object
+							</code></pre>
+						</div>
+						<div class="fragment">
+							//
+						</div>
+						<div class="fragment">
+							<pre><code data-trim>
+//num和str的valueOf返回的是object,如果此时用这种方式比较，就会出问题
+var str2 = 'foobar';
+str2.replace('foobar', 'hello, world') // str2先转化为内建包装对象
+							</code></pre>
+						</div>
+					</section>
+
+				  <section>
+				  	<p>
+				  		如果只打算访问自有属性，而不是原型链上的,那么...
+				  	</p>
+						<div class="fragment">
+							<pre><code data-trim>
+for (var prop in obj) {
+    if (d.hasOwnProperty(prop)) {
+        console.log( prop + ": " + obj[prop] );
+    }
+}
+							</code></pre>
+						</div>
+						<div class="fragment">
+							//
+						</div>
+						<div class="fragment">
+							所以定义类时，应该把公用的属性，或者方法放在原型链上，高效利用内存。
+						</div>
+				  </section>
+
+					<section>
+						<p>
+							万恶之源? with & eval ?
+						</p>
+						<div class="fragment">
+							<pre><code data-trim>
+var obj = { name: "foobar"},
+name = "helloworld";
+
+with (obj) {
+    console.log(name); // 如果变量和对象属性同名，使用变量 => helloworld
+    occupation = "IT"; // 对象无法带着这个属性出去，但是它自己可以出去
+}
+
+console.log(obj.occupation); // undefined;
+console.log(occupation); // IT
+
+eval('console.log("Hello, World")'); //可以执行javascrtip文本
+							</code></pre>
+						</div>
+						<div class="fragment">
+							//
+						</div>
+						<p class="fragment">
+							其他解决方案不行时，可以考虑一下救命稻草。Twitter? xxx? 有为with, eval做过辩护...
+						</p>
+					</section>
+
+					<section>
+						<p>parseInt带上进制</p>
+						<div class="fragment">
+							<pre><code data-trim>
+parseInt("10"); // 10
+parseInt("010"); // 8， 发现0开头，认为要转成8进制
+parseInt(val, 10);
+							</code></pre>
+						</div>
+					</section>
+
+					<section>
+						<h3>
+							不要遵守所有规则
+						</h3>
+						<div>with, eval也有它的用处
+有些好的实践方式在特定的环境下，可能会出问题，所以可以变通
+						</div>
+					</section>
+
+					<section>
+						<p>高效迭代访问</p>
+						<div class="fragment">
+							<pre><code data-trim>
+var arr = [1,2,3,4,5,6,7,8,9,10],
+    len = arr.length,
+    index = len;
+
+while(index--) { // 0为false, 不要比较，这样效率会更好一些
+    console.log(arr[index]);
+}
+							</code></pre>
+						</div>
+					</section>
+
+					<section>
+						<p>用户自定义方法名称以动词开头</p>
+						<div class="fragment">
+<pre><code data-trim>
+function _name(person) {
+	  //...
+}
+//set ? -> get ? -> modify? -> delete? -> ...
+</code></pre>
+						</div>
+						<div class="fragment">
+							//
+						</div>
+						<div class="fragment">
+							<pre><code data-trim>
+function _getName(person) {
+    //...
+}
+							</code></pre>
+						</div>
+					</section>
+
+					<section>
+							<p>避免在闭包内部引入闭包外部的变量，当闭包执行完成后，对象无法被GC回收</p>
+							<div class="fragment"><pre><code data-trim>
+var a = function() {
+    var numArr = [1,2,3];
+    return function() {
+        return numArr;
+    };
+}();
+								</code></pre>
+							</div>
+					</section>
+
+					<section>
+						<div>如果在一个div下面有多个按钮，或者a需要侦听事件, 请直接在这个div上面监听事件.
+善用事件代理，可以提高效率</div>
+					</section>
+
+
+
+
 				</section>
 
 				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
+					<section>
+						<p>
+							三目运算符
+						</p>
+						<div class="fragment"><pre><code data-trim>
+var authorized = false,
+    active;
+
+if(authorized) {
+    active = true;
+} else {
+    active = false;
+}
+						</code></pre>
+						</div>
+						<p class='fragment'>
+							=>
+						</p>
+						<div class="fragment"><pre><code data-trim>
+var active = authorized ? true : false;
+						</code></pre>
+						<em class="fragment">
+							注: 三目运算符始终会返回一个结果。条件判断，除了false, 0, undefined, NaN, "", null,其它的都为true。
+						</em>
+					</section>
+
+					<section>
+						<p>
+							延伸
+						</p>
+						<div class="fragment"><pre><code data-trim>
+//执行函数
+authorized ? function(){
+                 console.log('user is active...');
+             }()
+           : function(){
+                 console.log('user is not active...');
+           }();
+
+//多个表达式
+var a,b;
+authorized ? (a = 1, b = 2) : (a = b = 0);
+
+//嵌套
+var c;
+authorized ? (a = 1, b = 2) : authorized ? c = 3 : c = 0;
+						</code></pre>
+					</section>
+
+					<section>
+						<p>
+							短路运算符
+						</p>
+						<div class="fragment"><pre><code data-trim>
+var class = {
+    _addMember: function(member){
+        this.members = this.members ? this.members : [];
+        this.members.push(member);
+    }
+};
+						</code></pre>
+						<p class='fragment'>
+							=>
+						</p>
+						<div class="fragment"><pre><code data-trim>
+var class = {
+    _addMember: function(member){
+        this.members = this.members || [];
+        this.members.push(member);
+    }
+};
+						</code></pre>
+						<em class='fragment'>
+							这里主要注意||操作符前面表达式得出的结果是true还是false, true的话，执行短路操作，也就是碰到第一个表达式true的就返回。如果是&&的话，一直要判断到最后才能确定最终表达式的值。
+						</em>
+					</section>
+
+					<section>
+						<p>
+							switch语句使用
+						</p>
+						<div class="fragment"><pre><code data-trim>
+function findKindVal(kind){
+    if(kind == 'a') {
+        return 0;
+    } else if(kind == 'b') {
+        return 1;
+    } else if(kind == 'c') {
+        return 2;
+    }...
+}
+						</code></pre>
+						<p class='fragment'>
+							=>
+						</p>
+					</section>
+					<section>
+						<div><pre><code data-trim>
+function findKindVal(kind) {
+    switch(kind) {
+        case 'a':
+            return 0;
+        case 'b':
+            return 1;
+        case 'c':
+            return 2;
+        case 'd':
+        case 'e':
+            return 3;
+        default:
+            return '-1';
+    }
+}
+						</code></pre>
+						<em class='fragment'>
+						这里是直接return了，如果不是的话，需要加上break中断条件判断。这里可以把一些命中率高的选项放在前面。
+						</em>
+					</section>
+
+					<section>
+						<p>
+							使用createDocumentFragment添加DOM
+						</p>
+						<div class="fragment"><pre><code data-trim>
+var list = document.getElementById('book_list');
+for(var i = 0; i < 10; i++) {
+    var element = document.createElement('li');
+    element.appendChild(document.createTextNode('book_' + i));
+    list.appendChild(element);
+}
+						</code></pre>
+						<p class='fragment'>
+							=>
+						</p>
+						<div class="fragment"><pre><code data-trim>
+var list = document.getElementById('book_list'),
+    fragment = document.createDocumentFragment(),
+		element;
+
+for(var i = 0; i < 10; i++) {
+	  element = document.createElement('li');
+    element.appendChild(document.createTextNode('book_' + i));
+    fragment.appendChild(element);
+}
+
+list.appendChild(fragment);
+						</code></pre>
+
+					</section>
+					<section>
+						<em>
+						页面添加DOM常规做法是获取页面DOM节点，然后添加新的DOM。每一次添加DOM都会刷新页面，消耗时间而且降低效率。使用createDocumentFragment方法将新节点添加到一个fragment state上，最后将fragment上的所有节点一次性添加到页面DOM上。
+						</em>
+					</section>
+					<section>
+						<p>
+							减少var定义变量
+						</p>
+						<div class="fragment"><pre><code data-trim>
+var a = 1;
+var b = 2;
+var foo = 'bar';
+						</code></pre>
+						<p class='fragment'>
+							=>
+						</p>
+						<div class="fragment"><pre><code data-trim>
+var a = 1,
+    b = 2,
+    foo = 'bar';
+						</code></pre>
+						<em>每使用一个var定义变量都会给JavaScript解析器添加一条查找路径，可以使用,将多个变量定义使用一个var定义</em>
+					</section>
+
+					<section>
+						<p>
+							在循环外定义变量
+						</p>
+						<div class="fragment"><pre><code data-trim>
+for(var i = 0; i < 10; i++) {
+    var element = document.createElement('li');
+}
+						</code></pre>
+						<p class='fragment'>
+							=>
+						</p>
+						<div class="fragment"><pre><code data-trim>
+var element;
+for(var i = 0; i < 10; i++) {
+    element = document.createElement('li');
+}
+						</code></pre>
+						<em>JavaScript作用域是函数级别的，不是代码块，所以在循环块外定义变量，避免在循环内一次又一次定义变量</em>
+					</section>
+
+					<section>
+						<p>
+							使用join方法链接字符
+						</p>
+						<div class="fragment"><pre><code data-trim>
+var strs = ['a', 'b', 'c'],
+    len = strs.length,
+    result = '';
+
+for(var i = 0; i < len; i++) {
+    result += strs[i];
+}
+						</code></pre>
+						<p class='fragment'>
+							=>
+						</p>
+						<div class="fragment"><pre><code data-trim>
+var result = strs.join('');
+						</code></pre>
+					</section>
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+					<section>
+						<h3>
+							工具篇
+						</h3>
+					</section>
+
+					<section>
+						<ul>
+							<li>Grunt</li>
+							<li>Gulp</li>
+							<li>Browserify</li>
+							<li>Webpack</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li>Yeoman</li>
+							<li>Bower</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li>Qunit</li>
+							<li>Jasmine</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li>CoffeeScript</li>
+							<li>TypeScript</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li>Sublime Text</li>
+							<li>Atom</li>
+							<li>Vim</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li>jsfidde</li>
+							<li>CodePen</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li>Github</li>
+							<li>SVN</li>
+						</ul>
+					</section>
+
+
 				</section>
 
 				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
+					<section>
+						<h3>关于Code Review<h3>
+					</section>
+
+					<section>
+						<p>
+							It is about code, not about coder.
+						</p>
+						<ul>
+							<li>编码规范</li>
+							<li>代码质量</li>
+							<li>简单易懂</li>
+							<li>可维护性</li>
+							<li>性能</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li>http://jshint.com</li>
+							<li>http://github.com/es-analysis/plato</li>
+						</ul>
+					</section>
+
 				</section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<section>
+					<h2>结尾篇</h2>
+					<p class="fragment">
+						平时多积累
 					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
+					<p class="fragment">
+						学习好的实践
+					</p>
+
+					<p class="fragment">
+						写Demo
+					</p>
+
+					<p class="fragment">
+						Review 自己代码
+					</p>
+
+					<p class="fragment">
+						不断学习新事物,并实践
 					</p>
 				</section>
 
 				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
+					<h3>参考</h3>
 					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
+						- http://bonsaiden.github.io/JavaScript-Garden/zh/ <br/>
+            - https://github.com/sorrycc/awesome-javascript <br/>
+            - https://github.com/wwsun/awesome-javascript <br/>
+            - https://github.com/wchaowu/javascript-code <br/>
+            - https://hacks.mozilla.org/articles/ <br/>
+						- https://developer.mozilla.org/en-US/docs/Web/JavaScript <br/>
+						- http://javascriptweekly.com<br/>
+						- http://css-weekly.com/<br/>
+						- https://speakerdeck.com/addyosmani/javascript-memory-management-masterclass<br/>
+						- https://github.com/addyosmani/es6-equivalents-in-es5<br/>
+						//...
+
 					</p>
 				</section>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
+				</section>
+
+
+
+				<section style="text-align: left;" data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<h2>Thank U</h2>
+						<p>
+							Q&A
+						</p>
 				</section>
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+					<section>
+						<h3>Code Review</h3>
+					</section>
+					<section>
+						<div><pre><code data-trim>
+i.toString() // '' + i
+						</code></pre>
+					</section>
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
+					<section>
+						<div><pre><code data-trim>
+var obj = {
+    a: xxx,
+    b: xxx
+};
+List.push(obj); //obj只用到一次
+						</code></pre>
+         </section>
+				 <section>
+							<div><pre><code data-trim>
+if (!list || (list && !list.length)) {
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+//=>
+
+if (!list || !list.length) { //不存在或者存在但是为空
+							</code></pre>
+
+
+					</section>
+
+					<section>
+ 							<div><pre><code data-trim>
+if (level == 0) {
+
+=>
+
+if (!level) {
+ 							</code></pre>
+ 					</section>
+
+					<section>
+							<div><pre><code data-trim>
+(new Date()).getTime()
+
+=>
+
++new Date()
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+if (!checkbox.checked) {
+    checkbox.checked = true;
+} else {
+    checkbox.checked = false;
+}
+
+=>
+
+checkbox.checked = (!checkbox.checked) ? true : false;
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+if (selectedValue) {
+    $input.val(selectedValue);
+} else {
+    $input.val("");
+}
+
+=>
+
+$input.val(selectedValue || "");
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+inputs.length && inputs.forEach(function (input) {
+
+=>
+
+inputs.forEach(function (input) {
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+course.showTips("请输入正确的手机号！");
+
+SNError.PHONE_FORMATTER
+
+!(function(global){
+    var SNError = {
+        PHONE_FORMATTER: '请输入正确的手机号！'
+		}
+global.SNError = SNError;
+})(this);
+
+//后面只需要维护这个SNError即可，同时也会减少js文件的大小
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+//实例化后每个对象占用内存会随着方法而线性扩展
+(function(){
+    function A () {
+        this.name = 'foobar';
+        this.greeting = function(){
+            console.log(this.name)
+        }
+    }
+
+    var a = new A();
+    a.greeting();
+    console.log(a.hasOwnProperty('greeting'))
+})();
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+var _this = this;
+var db = this.getSessionStorage();
+var _activeCode = URL_PARAM["xxx"];
+
+=>
+
+var _this = this,
+    db = this.getSessionStorage(),
+    _activeCode = URL_PARAM["xxx"];
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+me.removeClass("focus");
+me.addClass("gray");
+
+=> me.removeClass("xxxx").addClass("xxx")
+
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+//除完后如果是小数？
+parseInt((len - maxlimit + 1) / 2)
+
+=>
+
+parseInt((len - maxlimit + 1) / 2, 10)
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+location.href = "./error.html?errorMsg=" + xxx.SYSTEM_ERROR_MSG();
+
+=>
+
+location.href = "./error.html?errorMsg=" + encodeURIComponent(xxx.SYSTEM_ERROR_MSG());
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+$("#xxx").find(".xxx").length || 0
+
+=》
+
+$("#xxx").find(".xxx").length
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+//变量表达式重复使用到，没有缓存到变量中。
+
+xxx.getXXXX();
+
+=>
+
+var state = xxx.getXXXX();
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+window.moduleName.moduleMethod
+
+=>
+
+moduleName.moduleMethod
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+$obj.css("visibility","hidden");
+
+=>
+
+$obj.show();
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+//条件会互斥的话，只会走一个分支
+if(_variableName == "xxxxx"){
+    //...
+}
+if(_variableName == "xxxxx"){
+    //...
+}
+
+=> if ... else if ... 或者switch (条件多的话，优先考虑)
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+obj["a"] = a;
+obj["b"] = b;
+obj["c"] = c;
+obj["c"]= d;
+
+=>
+
+obj = $.extend(obj, {
+   a: xxxx
+   //...
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+if(....) {
+    str = '计算获取'
+    return str
+}else {
+    return '';
+}
+
+=>
+
+var str = '';
+if(....) {
+    str = '计算获取'
+    return str;
+}
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+//字面量声明
+
+var arr = new Array();
+
+=>
+
+var arr = [];
+							</code></pre>
+					</section>
+
+					<section>
+							<div><pre><code data-trim>
+$("#xxxx").unbind("click");
+$("#xxxx").click(function(){
+    //...
+});
+
+=>
+
+$("#xxxx").unbind("click").bind('click',function() {
+    //...
+});
+							</code></pre>
+					</section>
+
+					<section>
+ 					<p>
+ 						More...
+ 					</p>
+					</section>
+
 				</section>
 
 			</div>

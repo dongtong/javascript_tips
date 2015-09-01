@@ -1,0 +1,8 @@
+#tags ul li{
+  display: inline-block !important;
+  list-style: none !important;
+  padding: 2px 20px !important;
+  margin: 4px;
+  background: #6CCBAE;
+  color: #fff;
+}
